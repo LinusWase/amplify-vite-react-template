@@ -38,8 +38,11 @@ export const handler: Handler = async (event, context) => {
     console.log("request:", request)
 
     try {
+        console.log("request: ", request)
         response = await fetch(request);
+        console.log("response: ", response)
         responseBody = await response.json();
+        console.log("Response Body: ", responseBody)
 
         console.log("responseBody:", responseBody)
         if (responseBody.errors) statusCode = 400;

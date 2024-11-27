@@ -231,40 +231,6 @@ function App() {
         </Button>
       }
 
-      {/*
-      <Table
-        caption="Telemetries"
-        highlightOnHover={true}
-        variation="striped">
-        <TableHead>
-          <TableRow>
-            <TableCell as="th">Device ID</TableCell>
-            <TableCell as="th">Temperature</TableCell>
-            <TableCell as="th">Humidity</TableCell>
-            <TableCell as="th">Delete</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {telemetries.map((tel, index) => (
-            <TableRow key={index}>
-              <TableCell>{tel.device_id}</TableCell>
-              <TableCell>{tel?.temperature}</TableCell>
-              <TableCell>{tel?.humidity}</TableCell>
-              <TableCell>
-                <Button
-                  variation="primary"
-                  colorTheme="error"
-                  onClick={() => deleteTelemetry(tel.device_id, tel.timestamp)}
-                >
-                  Delete
-                </Button>
-              </TableCell>
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-      */}
-
       <Line options={chartOptions} data={cartData}></Line>
 
       <Divider padding="xs" />
