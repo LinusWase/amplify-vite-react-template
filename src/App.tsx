@@ -206,7 +206,7 @@ function App() {
               <Flex>
                 Status:
                 <Badge variation={(item?.status == "connected") ? "success" : "error"} key={item.device_id}>
-                  {item?.status ? item?.status.charAt(0).toUpperCase() + String(item?.status).slice(1) : ""}
+                  {item?.status ? item?.status.charAt(0).toUpperCase() + String(item?.status).slice(1) : "Unknown"}
                 </Badge>
               </Flex>
               <Divider padding="xs" />

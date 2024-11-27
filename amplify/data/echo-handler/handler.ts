@@ -1,5 +1,5 @@
 import type { Schema } from '../resource'
-
+/*
 export const handler: Schema["addTelemetry"]["functionHandler"] = async (event, context) => {
     return {
         device_id: event.arguments.device_id,
@@ -11,3 +11,4 @@ export const handler: Schema["addTelemetry"]["functionHandler"] = async (event, 
         updatedAt: new Date(event.arguments.timestamp).toISOString(),
     };
 };
+*/
