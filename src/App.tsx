@@ -152,6 +152,8 @@ function App() {
     ],
   };
 
+  const latestMeasurements = telemetries.slice(-10).reverse();
+
   return (
     <main>
       <Heading
@@ -234,9 +236,34 @@ function App() {
       <Line options={chartOptions} data={cartData}></Line>
 
       <Divider padding="xs" />
+
+      <div className="container">
+      <div className="table">
+        <h2>Latest Measurements</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Temperature</th>
+              <th>Humidity</th>
+            </tr>
+          </thead>
+          <tbody>
+            {latestMeasurements.map((measurement, index) => (
+              <tr key={index}>
+                <td>{measurement.temperature} °C</td>
+                <td>{measurement.humidity} %</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
       <button onClick={signOut}>Sign out</button>
     </main >
   );
+
+  
 }
 
 export default App;

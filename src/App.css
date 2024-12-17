@@ -40,3 +40,33 @@
 .read-the-docs {
   color: #888;
 }
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.graph {
+  flex: 2;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.table {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}

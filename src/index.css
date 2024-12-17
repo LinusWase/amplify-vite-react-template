@@ -1,12 +1,11 @@
 body {
   margin: 0;
-  background: linear-gradient(180deg, rgb(117, 81, 194), rgb(255, 255, 255));
+  background:rgb(246, 250, 237);
   display: flex;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   height: 100vh;
   width: 100vw;
   justify-content: center;
-  align-items: center;
 }
 
 main {
@@ -62,4 +61,34 @@ li:hover {
 a {
   font-weight: 800;
   text-decoration: none;
+}
+
+.container {
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+}
+
+.graph {
+  flex: 2;
+  border: 1px solid #000000;
+  padding: 10px;
+}
+
+.table {
+  flex: 1;
+  border: 1px solid #000000;
+  padding: 10px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse:separate;
+}
+
+table th,
+table td {
+  border: 1px solid #000000;
+  padding: 8px;
 }
